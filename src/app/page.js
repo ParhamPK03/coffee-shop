@@ -1,12 +1,13 @@
-import Navbar from '@/components/modules/navbar/Navbar'
-import React from 'react'
+import Navbar from "@/components/modules/navbar/Navbar";
+import Banner from "@/components/templates/index/banner/Banner";
+import Latest from "@/components/templates/index/latest/Latest";
 
-const page = () => {
+export default function Home() {
   return (
-  <>
-    <Navbar/>
-  </>
-  )
+    <>
+      <Navbar />
+      <Banner />
+      <Latest />
+    </>
+  );
 }
-
-export default page
