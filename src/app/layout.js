@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import AOSInit from "@/utils/aos";
+import ScrollToTop from "@/utils/SctollToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,8 +10,7 @@ export const metadata = {
   description: "Sabzlearn coffee project with next.js v13",
 
   icons: {
-    icon: "/images/coffee-icon.png",
-  },
+    icon: "/images/coffee-icon.png",  },
 };
 
 export default function RootLayout({ children }) {
@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <AOSInit />
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );
